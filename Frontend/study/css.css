@@ -1,0 +1,70 @@
+/* css 문법은 크게 selector 와 Declaration block으로 나뉨 */
+body{
+    color: green;
+    font-size: 24px;
+    background-color: black;
+}
+/* body <- selctor
+{} <- Declaration block
+color: green; font-size: 24px; background-color: black; <- 선언
+background-color <- property
+black <- 속성값
+; <- 선언구분자 */
+
+/* EX) */
+/* HTML 문서 내의 버튼 스타일을 변경합니다 */
+button  {
+    width: 180px; /*버튼의 너비를 180px*/
+    height: 50px; /*버튼의 높이를 50px*/
+    border-radius: 20px; /*버튼의 테두리를 둥글게 만듭니다*/
+    font-size: 17px; /* 버튼에 위치한 텍스트 크기를 17px*/
+    color: white; /* 버튼에 위치한 텍스트의 색상을 흰색으로 변경*/
+    background-color: #000000; /* 버튼의 배경색을 검은색으로 지정*/
+}
+/* HTML 문서 내의 버튼에 마우스를 올리면 해당 스타일을 추가합니다 */
+button:hover{
+    background-color: 4000c7;/*버튼의 배경색을 남색으로*/
+    box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px; /*버튼에 그림자 효과를 지정정*/
+}
+
+/* id=title , # 을 사용해서 유일한속성인 id 를 불러와 스타일 지정가능 */
+/* class = article , . 을 이용해서 classs를 공유하는 특정 속성 스타일 지정가능*/
+#title {
+    color: green;
+    font-size: 80px;
+}
+.article {
+    margin: 5px;
+    background-color: gold;
+    width: 100px;
+    height: 50px;
+}
+/* HTML, CSS 연결하는 방법은 크게 3가지 */
+/* EX) <h1 id="title"> Example </h1> */
+/* 1. Inline Style = HTML 태그 내에 style 속성을 이용해서 CSS를 바로 지정가능, 이미 스타일을 지정했기 떄문에 selector와 Declaration block 없이 바로 지정*/
+/* 2. Internal Stylesheet = HTML 문서의 <head> 태그 내에 <style> 태그를 삽입하고 해당 태그 사이에 CSS문법을 작성해 스타일 지정, 이 경우 HTML 문서에만 스타일 적용 */
+/* Internal Stylesheet ex code
+<html>
+    <head>
+        <style>
+            h1 {
+                color:red;
+                background-color:yellow;
+            }
+        </style>
+    </head>
+    <body>
+            <h1> style 태그에 적용한 스타일이 적용되었습니다.</h1>
+    </body>
+</html> */
+/* External Swtylesheet = HTML 문서 내부가 아닌 외부에서 CSS 파일을 작성했다면, HTML 문서의 <head> 태그 내에 <link>태그를 삽입하여 HTML 문서에 CSS를 연결할 수 있습니다.
+<link> 태그에 rel 속성을 stylestheet 로 지정하고 herf 속성으로 CSS 파일의 경로를 지정하여 연겨레할 수 있습니다*/
+ /* External Swtylesheet ex code 
+ <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1> 참초한 CSS 파일의 스타일이 적용되었습니다.</h1>
+    </body>
+ </html> */
