@@ -5,7 +5,7 @@
  * 2) let - 실제로 쓰는 , 프로젝트를 진행할때 
  * 3) const - //
  */
-var name = '코드팩토리';
+var name = '고래래';
 console.log(name);
 
 var age = 32;
@@ -26,8 +26,17 @@ console.log(ive);
 const newJeans = '뉴진스';
 console.log(newJeans);
 
-// newJeans = '코드팩토리';
+// newJeans = '고래래';
 
 /**
+ * 선언과 할당
  * 
+ * 1) 변수를 선언하는 것.
+ * 2) 할당
  */
+var name ='고래';
+console.log(name);
+
+
+let girlFrined;
+console.log(girlFrined);
